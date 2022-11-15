@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css"></link>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row h-100 justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 contentwrapper">
+                <!--success message-->
+                <div class="success_message alert alert-success d-none">
+                    <div class="inner_wrapper">
+                        <span class="text-content"></span>
+                        <span class="close"></span>
+                    </div>
+                </div>
+
+                <!--alert message-->
+                <div class="error_message alert alert-danger d-none">
+                    <div class="inner_wrapper">
+                        <span class="text-content"></span>
+                        <span class="close"></span>
+                    </div>
+                </div>
+                <div class="wlcmessage">
+                    <h2>Welcome to our app, please logIn</h2>
+                </div>
+                <!-- <div class="regularlogin">
+                    <div class="firstrow">
+                        <a href="#login" class="link-dark login">Login</a>
+                        <a href="#register" class="link-dark register">Register</a>
+                    </div>
+                    
+                    <div id="register" class="regregister reg">
+                        <form method="POST" action="/auth/local/register">
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" name="fullname" id="fullname" placeholder="Full Name" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password (must be at least 8 characters)" required minlength="8"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" name="passwordrepeat" id="passwordrepeat" placeholder="Repeat Password" required minlength="8"/>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary form-control form-control-lg">Register</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="login" class="reglogin reg">
+                        <form method="POST" action="/auth/local/login">
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-lg" name="emaillog" id="emaillog" placeholder="Email" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" name="passwordlog" id="passwordlog" placeholder="Password" minlength="8" required/>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary form-control form-control-lg">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div> -->
+                
+                <div class="loginwrapper">
+                    <h1>Social Login</h1>
+                    <div class="btnwrapper">
+                        <a href="/auth/google" class="btn btn-danger btn-block socialbtn">
+                            <i class="fa-brands fa-google"></i><span class="ms-5">Sign in with <b>Google</b></span>
+                        </a>
+                    </div>
+
+                    <!-- <div class="btnwrapper">
+                        <a href="/auth/twitter" class="btn btn-primary btn-block socialbtn">
+                            <i class="fa-brands fa-twitter"></i><span class="ms-5">Sign in with <b>Twitter</b></span>
+                        </a>
+                    </div>
+
+                    <div class="btnwrapper">
+                        <a href="/auth/github" class="btn btn-dark btn-block socialbtn">
+                            <i class="fa-brands fa-github"></i><span class="ms-5">Sign in with <b>Github</b></span>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

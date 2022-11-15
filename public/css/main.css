@@ -1,0 +1,158 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(233, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contentwrapper {
+  position: relative;
+}
+.contentwrapper .success_message {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  z-index: 10;
+  font-size: 2rem;
+}
+.contentwrapper .success_message .inner_wrapper {
+  position: relative;
+}
+.contentwrapper .success_message .inner_wrapper .close {
+  position: absolute;
+  top: -1.5rem;
+  right: 0.2rem;
+  font-size: 4rem;
+}
+.contentwrapper .success_message .inner_wrapper .close:hover {
+  cursor: pointer;
+}
+.contentwrapper .success_message .inner_wrapper .close::after {
+  display: inline-block;
+  content: "×";
+}
+.contentwrapper .error_message {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  z-index: 10;
+  font-size: 2rem;
+}
+.contentwrapper .error_message .inner_wrapper {
+  position: relative;
+}
+.contentwrapper .error_message .inner_wrapper .close {
+  position: absolute;
+  top: -1.5rem;
+  right: 0.2rem;
+  font-size: 4rem;
+}
+.contentwrapper .error_message .inner_wrapper .close:hover {
+  cursor: pointer;
+}
+.contentwrapper .error_message .inner_wrapper .close::after {
+  display: inline-block;
+  content: "×";
+}
+.contentwrapper .wlcmessage {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contentwrapper .wlcmessage h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .contentwrapper .wlcmessage {
+    margin-top: 5rem;
+  }
+  .contentwrapper .wlcmessage h3 {
+    font-size: 2.5rem;
+  }
+}
+.contentwrapper .regularlogin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.contentwrapper .regularlogin .form-group {
+  margin: 1rem 0;
+}
+.contentwrapper .regularlogin .form-group input, .contentwrapper .regularlogin button {
+  font-size: 2rem;
+}
+.contentwrapper .regularlogin .firstrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contentwrapper .regularlogin .firstrow a {
+  font-size: 2rem;
+  margin: 0 2rem;
+  color: black;
+}
+.contentwrapper .regularlogin a:target {
+  background-color: red;
+}
+.contentwrapper .regularlogin .reg {
+  width: 100%;
+}
+.contentwrapper .regularlogin .reg:not(:target) {
+  display: none;
+}
+.contentwrapper .regularlogin #login {
+  display: block;
+}
+.contentwrapper .regularlogin #register:target ~ #login {
+  display: none;
+}
+.contentwrapper .loginwrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+.contentwrapper .loginwrapper .btnwrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contentwrapper .loginwrapper .btnwrapper a {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 1200px) {
+  .contentwrapper .loginwrapper .btnwrapper a {
+    padding: 2rem;
+  }
+}
+.contentwrapper .loginwrapper .btnwrapper .socialbtn {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
